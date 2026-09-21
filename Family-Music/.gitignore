@@ -1,0 +1,52 @@
+echo "target/
+.target/
+*.class
+.mtj.tmp/
+*.jar
+*.war
+*.ear
+*.crash
+.settings/
+.classpath
+.project
+.factorypath
+.idea/
+*.iml
+.vscode/
+bin/
+.env
+*.log
+dependencycache/
+acls = @"
+
+# ==========================================
+# Sistemas Operativos (Mac, Windows, Linux)
+# ==========================================
+
+# macOS (Archivos de indexación y vistas)
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon_
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows (Caché de miniaturas y configuraciones de carpeta)
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+`$RECYCLE.BIN/
+*.lnk
+
+# Linux (Archivos temporales y de bloqueo de editores)
+*~
+.~lock.*
+.directory
+.trash/
+*.swp
+*.swo
+"@
+Add-Content .gitignore $acls
